@@ -79,6 +79,12 @@ var myGavdosContent = "Near the more well-known Crete, Gavdos is the most southe
 GavdosParagraph.textContent = myGavdosContent;
 
 
+$(function() {   
+    $('form').submit(function() {     
+    console.log('firstName: '+$('input[name="firstName"]').val() + ' lastName: '+ $('input[name="lastName"]').val() + ' email: '+ $('input[name="email"]').val() + ' comments: '+ $('input[name="comments"]').val());  
+ }); 
+});
+
 
 })();
 
