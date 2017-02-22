@@ -8,18 +8,14 @@ var travelReport = (function () {
 "use strict";
 console.log("App Started...")
 
-var firstHeading = document.getElementById("firstHeading");
-
-console.log(firstHeading.textContent);
-
 // connecting myContent to my index.html page 
-var FirstParagraph = document.getElementById("FirstParagraph");
+var IntroParagraph = document.getElementById("IntroParagraph");
 
 var myContent = `Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn't impacted the experience of visiting. Plus, there may be some great deals. Greece has 1,400 islands, though only 230 of them are inhabited. And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too.`;
 
-FirstParagraph.textContent = myContent;
+IntroParagraph.textContent = myContent;
 
-
+// connecting text to my index.html page 
 var FolengandrosParagraph = document.getElementById("FolegandrosParagraph");
 
 var myFolegandrosContent = `Folegandros is almost a Greek cliché, full of beautiful whitewashed houses with bright blue doors lining cobblestoned streets on steep cliffs. Rugged and remote, without chain hotels or package tours — not even a bank or ATM — and accessible only by ferry, the volcanic island boasts solitude in spades, secluded beaches, and incredible sunsets.`;
@@ -82,7 +78,7 @@ var myGavdosContent = `Near the more well-known Crete, Gavdos is the most southe
 
 GavdosParagraph.textContent = myGavdosContent;
 
-
+// function to take form outputs and store them in the console 
 $(function() {   
     $('form').submit(function() {     
     console.log('firstName: '+$('input[name="firstName"]').val() + ' lastName: '+ $('input[name="lastName"]').val() + ' email: '+ $('input[name="email"]').val() + ' comments: '+ $('input[name="comments"]').val());  
