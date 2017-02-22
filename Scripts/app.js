@@ -80,7 +80,7 @@ GavdosParagraph.textContent = myGavdosContent;
 
 // function to take form outputs and store them in the console 
 $(function() {   
-    $('form').onsubmit(function() {     
+    $('form').onclick(function() {     
     console.log('firstName: '+$('input[name="firstName"]').val() + ' lastName: '+ $('input[name="lastName"]').val() + ' email: '+ $('input[name="email"]').val() + ' comments: '+ $('input[name="comments"]').val());  
  }); 
 });
